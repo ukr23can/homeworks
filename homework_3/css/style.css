@@ -1,0 +1,77 @@
+@import url("reset.css");
+
+h1 {
+	color: red;
+}
+[class*="title"] {
+	color: blue;
+}
+h4,
+span {
+	color: aqua;
+}
+
+/* header */
+.header-item>a {
+	color: green;
+}
+
+
+/* main */
+
+/* block-biography */
+.content-biography .subtitle {
+	color: burlywood;
+}
+.content-biography>p {
+	color: darkgreen;
+}
+
+/* block-exploits */
+.block-exploits p {
+	color: brown;
+}
+li.exploits-item {
+	color:blue;
+}
+.exploits-item>h4 {
+	color: green;
+}
+#exploits-title {
+	color: red;
+}
+/* legends */
+h3+p {
+	color: blueviolet;
+}
+.legends-item {
+	color:darksalmon;
+}
+
+/* conclusion */
+.conclusion-link {
+	color: bisque;
+}
+.conclusion-link~p {
+	color: brown;
+}
+.conclusion-link>a {
+	color: deeppink;
+}
+
+/* footer */
+.about p {
+	color: yellowgreen;
+}
+.about p > span {
+	color: blue;
+}
+.footer-list>li a {
+	color: red;
+}
+.phrase p {
+	color: blue;
+}
+.phrase+a {
+	color: blueviolet;
+}
