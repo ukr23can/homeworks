@@ -75,3 +75,46 @@ h3+p {
 .phrase+a {
 	color: blueviolet;
 }
+
+/* стилізування списку */
+/* 1й рівень вкладенності */
+ul>li {
+	color: red;
+}
+
+ul>li~li {
+	color: green;
+}
+
+/* ul>li+li {
+	color: green;
+} */
+
+/* 2й рівень вкладенності */
+ul>li>ul li {
+	color: blue;
+}
+
+ul>li>ul>li+li {
+	color: orange;
+}
+
+/* ul>li>ul>li~li {
+	color: orange;
+} */
+ul>li>ul>li>span {
+	color: yellow;
+}
+
+/* 3й рівень вкладенності */
+ul>li>ul>li>ol li {
+	color: purple;
+}
+
+ul>li>ul>li>ol>li+li {
+	color: gray;
+}
+
+/* ul>li>ul>li>ol>li>span {
+	color: gray;
+} */
