@@ -1,0 +1,161 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* reset */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.link {
+	font-family: "Dancing Script", sans-serif;
+	text-decoration: underline;
+	color: brown;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.title {
+	font-family: "segoe", sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	text-transform:capitalize;
+	color: blue;
+	text-decoration: underline;
+	text-shadow: 2px 3px 4px rgb(0, 0, 0.5),
+					5px 6px 8px yellow;
+	letter-spacing: 7px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.headline,
+.subtitle{
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: darkkhaki;
+	text-shadow: 3px 4px 8px #000,
+					1px 3px 3px green;
+	text-decoration: overline;
+}
+
+/* header */
+.header-link {
+	color: blue;
+	text-shadow: 1px -2px 1px #000,
+					-1px -4px 1px yellow;
+	text-decoration: underline;
+	text-decoration-style:dotted;
+}
+
+/* page-hero */
+.hero-title {
+	font-family: "Poppins", sans-serif;
+	font-size: 42px;
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-shadow: 3px 6px 8px #000,
+					1px 3px 5px red;
+}
+.hero-text {
+	text-align: justify;
+	letter-spacing: 8px;
+	text-decoration: underline;
+	color: darkgreen;
+	text-transform: capitalize;
+	text-shadow: 3px 6px 2px yellowgreen;
+}
+.hero-text+p {
+	font-size: 18px;
+	color: darkred;
+	text-decoration: line-through;
+}
+
+.headline+p {
+	text-align: justify;
+	letter-spacing: 5px;
+	color: #000;
+	text-shadow: -4px -2px 4px #000,
+					-3px -4px 2px red,
+					0 -3px 1px yellow;
+}
+.subtitle~ul>li {
+	word-spacing: 8px;
+	color: darkgray;
+}
+.page-kyiv .subtitle~ul>li>span,
+.page-cream .subtitle~ul>li>span,
+.page-kirovograd .subtitle~ul>li>span,
+.page-zhitomir .subtitle~ul>li>span,
+.page-lviv .subtitle~ul>li>span {
+	font-family: "Dancing Script", sans-serif;
+	font-style: italic;
+	color: red;
+	text-shadow: 2px 4px 3px #000;
+}
+.page-zhitomir .subtitle~ul>li>a {
+	color: #000;
+	text-shadow: 2px 3px 3px red;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-style:double;
+}
+
+
+/* footer */
+.footer-link {
+	text-decoration: underline;
+	text-decoration-style: wavy;
+}
+.footer-nav+p {
+	color: #000;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	text-shadow: 0 2px 4px yellow,
+					1px 1px 3px red;
+}
+.footer-nav~div {
+	text-align: center;
+}
+.copyright {
+	font-weight: 600;
+	color: dimgray;
+	text-shadow: 0 3px 3px red;
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+ .policy-link {
+	color: blue;
+	text-shadow: 0 2px 3px yellow;
+}
+
+/*  page-ecobazar */
+.title-ecobazar {
+	font-size: 38px;
+	font-weight: 700;
+	text-align: center;
+	color: #000;
+	text-shadow: 2px 3px 3px red;
+	text-decoration: underline;
+	text-decoration-style: double;
+	text-transform: uppercase;
+}
+.ecobazar-content {
+	color: #808080;
+}
+.text-accent {
+	font-size: 20px;
+	font-weight: 500;
+	color: #1A1A1A;
+}
