@@ -1,0 +1,255 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,700&display=swap");
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* reset */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Circular std", sans-serif;
+	font-size: 14px;
+	line-height: 142.857143%; /* 20/14 */
+	font-weight: 400;
+}
+
+/*  homework practice  */
+.homework-content {
+	background-color: lightgrey;
+}
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 50px 20px 0;
+	margin-bottom: 50px;
+}
+.block {
+	padding: 20px;
+}
+.block-content {
+	width: 100%;
+	max-width: 500px;
+	margin-bottom: 40px;
+	min-height: 150px;
+}
+.content-height {
+	min-height: 100px;
+	height: 100%;
+}
+.content-title {
+	font-size: 20px;
+	color: red;
+	margin-bottom: 10px;
+	text-shadow: 0 1px 2px #000,
+		0 2px 2px gray;
+	text-align: center;
+}
+.content-title~ul>li>span {
+	color: blue;
+	width: 100%;
+	max-width: 300px;
+	padding-right: 10px;
+	text-shadow: 0 1px 2px red;
+}
+.content-image {
+	margin-bottom: 10px;
+}
+.content-list {}
+
+.content-list-mar-top {
+	margin-top: -290px;
+}
+.content-list-mar-top li {
+	color: #252B42;
+}
+.content-hidden-hidden {
+	min-height: 150px;
+	overflow: hidden;
+}
+.content-hidden-auto {
+	overflow: auto;
+}
+.content-padding {
+	color: red;
+	background-color:bisque;
+	padding: 50px;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.content-padding h2 {
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.content-padding p {
+	margin-bottom: 20px;
+}
+.content-padding .text-last {
+	margin-bottom: 0;
+}
+.content-height {
+	color: red;
+	background-color:darkgray ;
+	padding: 50px;
+	width: 100%;
+	max-width: 300px;
+	min-height: 80px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.content-height p {
+	margin-bottom: 20px;
+}
+.content-height .text-last {
+	margin-bottom: 0;
+}
+.background {
+	background-color: bisque;
+	display: block;
+	width: 600px;
+	height: 80px;
+	margin: 0 auto;
+}
+.background-text {
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+	margin-top: -50px;
+	margin-bottom: 30px;
+}
+.box-text {
+	background-color: antiquewhite;
+	width: 600px;
+	margin: 0 auto;
+	height: 100px;
+	margin-bottom: 20px;
+}
+.box-text h2 {
+	font-size: 20px;
+	color: red;
+	text-align: center;
+}
+.box-text-auto {
+	overflow: auto;
+}
+.box-text-hidden {
+	overflow: hidden;
+}
+.box-text-visible {
+	overflow: visible;
+}
+.box-text-last {
+	margin-bottom: 50px;
+}
+
+
+
+
+/* homework layout */
+.main {}
+
+.page-container {
+	padding: 112px 0;
+	background-color: #231F8B;
+}
+.advantages-container {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.advantages-logo {
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	color: #5A54F2;
+	margin-bottom: 10px;
+	letter-spacing: 0.2px;
+}
+.advantages-title {
+	font-family: "Circular std", sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	line-height: normal;
+}
+.advantages-title>span {
+	text-transform: lowercase;
+}
+.advantages-text {
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	color: #fff;
+	max-width: 765px;
+	width: 100%;
+	margin-bottom: 70px;
+}
+.cards-text-light {
+	color: #fff;
+}
+.advantages-cards {
+	width: 100%;
+	font-size: 0;
+	/* margin: 0 -20px; */
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.cards-item {
+	width: 25%;
+	/* max-width: 230px; */
+	/* width: 100%; */
+	min-height: 288px;
+	display: inline-block;
+	vertical-align: top;
+	/* padding: 0 20px; */
+	font-size: 14px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.cards-content {
+	background-color: #fff;
+	padding: 35px 40px;
+}
+.cards-content-blue {
+	background-color: #5A54F2;
+}
+.cards-content-blue>p {
+	color: #fff;
+}
+.cards-item-last {
+	margin-right: 0;
+}
+.cards-item-top {
+	margin-top: 48px;
+}
+.cards-icon {
+	margin-bottom: 20px;
+}
+.cards-title {
+	color: #252B42;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.1px;
+	margin-bottom: 20px;
+}
+.cards-line {
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	background-color: #E74040;
+	margin-bottom: 20px;
+}
+.cards-text {
+	font-family: "Montserrat", sans-serif;
+	color: #737373;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	line-height: 142.857143%; /* 20/14 */
+}.white {}
+
