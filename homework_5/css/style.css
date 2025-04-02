@@ -11,7 +11,6 @@ body {
 	font-family: "Circular std", sans-serif;
 	font-size: 14px;
 	line-height: 142.857143%; /* 20/14 */
-	font-weight: 400;
 }
 
 /*  homework practice  */
@@ -162,6 +161,9 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+.advantages-content {
+	margin-bottom: 70px;
+}
 .advantages-logo {
 	font-family: "Montserrat", sans-serif;
 	font-style: normal;
@@ -188,29 +190,26 @@ body {
 	color: #fff;
 	max-width: 765px;
 	width: 100%;
-	margin-bottom: 70px;
 }
 .cards-text-light {
 	color: #fff;
 }
 .advantages-cards {
-	width: 100%;
 	font-size: 0;
-	/* margin: 0 -20px; */
-	margin-left: -15px;
-	margin-right: -15px;
+	/* padding: 0 15px; */
+}
+.cards-inner {
+	margin: 0 -15px;
 }
 .cards-item {
 	width: 25%;
-	/* max-width: 230px; */
-	/* width: 100%; */
 	min-height: 288px;
 	display: inline-block;
 	vertical-align: top;
-	/* padding: 0 20px; */
 	font-size: 14px;
-	padding-left: 15px;
-	padding-right: 15px;
+	/* padding-left: 15px; */
+	/* padding-right: 15px; */
+	padding: 0 15px;
 }
 .cards-content {
 	background-color: #fff;
@@ -251,5 +250,5 @@ body {
 	font-size: 14px;
 	letter-spacing: 0.2px;
 	line-height: 142.857143%; /* 20/14 */
-}.white {}
+}
 

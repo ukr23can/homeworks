@@ -1,0 +1,99 @@
+@import url("reset.css");
+
+body {
+	background-color: #231F8B;
+	font-size: 14px;
+	line-height: 142.857143%;
+}
+.advantages-content {
+	margin-bottom: 70px;
+}
+.advantages-logo {
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	color: #5A54F2;
+	margin-bottom: 10px;
+	letter-spacing: 0.2px;
+}
+.advantages-title {
+	font-family: "Circular std", sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	line-height: normal;
+}
+.advantages-title>span {
+	text-transform: lowercase;
+}
+.advantages-text {
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	color: #fff;
+	max-width: 765px;
+	width: 100%;
+}
+.wrapper {
+	padding: 112px 0;
+	font-size: 0;
+}
+.advantages-container {
+	max-width: 1280px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.cards {
+	
+}
+.cards-inner {
+	margin: 0 -15px;
+}
+.card-item {
+	width: 25%;
+	display: inline-block;
+	font-size: 14px;
+	padding: 0 15px;
+	min-height: 288px;
+	vertical-align: top;
+}
+.cards-content {
+	background-color: #fff;
+	padding: 35px 40px;
+}
+.cards-content-blue {
+	background-color: #5A54F2;
+}
+.cards-title {
+	color: #252B42;
+	font-size: 16px;
+	letter-spacing: 0.1px;
+	margin-bottom: 20px;
+}
+.cards-title-light {
+	color: #fff;
+}
+.cards-line {
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	background-color: #E74040;
+	margin-bottom: 20px;
+}
+.cards-line-light {
+	background-color: #fff;
+}
+.cards-text {
+	color: #737373;
+	letter-spacing: 0.2px;
+}
+.cards-text-light {
+	color: #fff;
+}
+.icon {
+	margin-bottom: 20px;
+}
+.card-top {
+	margin-top: 48px;
+}
