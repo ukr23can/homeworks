@@ -1,0 +1,90 @@
+/* Google fonts */
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* reset */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	line-height: 1.5;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+[class*="container"] {
+	max-width: 1380px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.main-title {
+	font-size: 42px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	color: gray;
+	text-shadow: 0 2px 3px #000;
+	margin-bottom: 30px;
+}
+.block {
+	background-color:bisque;
+	font-size: 22px;
+	color:brown;
+	border: 2px solid green;
+	border-radius: 10px;
+	padding: 15px;
+	min-width: 500px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.block-link {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.image {
+	max-width: 400px;
+	/* width: 100%; */
+	margin: 0 auto;
+}
+.block:hover .block-link {
+	color: blue;
+}
+.block:hover .block-image {
+	display: block;
+}
+.block-image {
+	display: none;
+}
+.block-link {
+	max-width: 700px;
+	margin: 0 auto;
+	margin: 0 -20px;
+	font-size: 0;
+	display: block;
+}
+.link {
+	font-size: 24px;
+	color: gray;
+	text-shadow: 0 2px 4px #000,
+					1px 2px 2px red;
+	padding: 0 20px;
+	text-transform: uppercase;
+}
+.link.active:active {
+	color: red;
+	background-color: blue;
+}
+.link.visited:visited {
+	color: yellow;
+}
+.link.focus:focus {
+	outline: 2px solid green;
+}
+.link.hover:hover {
+	text-decoration: underline;
+	color: brown;
+}
