@@ -1,0 +1,32 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap");
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* reset */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	color: #2e2e3f;
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	line-height: 1.3; 
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+[class*="container"] {
+	max-width: 1350px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homework No9</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Google fonts -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- section-header -->
+		<header class="section-header" id="up">
+			<div class="section-header__container">
+				<!-- 
+					Це БЕМ-блок list-header  
+					та БЕМ-елемент БЕМ-блоку section-header 
+					одночасно
+								-->
+				<ul class="section-header__list list-header">
+					<li class="list-header__item">
+						<a href="#section-features" class="list-header__link">section-features</a>
+					</li>
+					<li class="list-header__item">
+						<a href="#featured-products" class="list-header__link">featured-products</a>
+					</li>
+					<li class="list-header__item">
+						<a href="#section-categories" class="list-header__link">section-categories</a>
+					</li>
+					<li class="list-header__item">
+						<a href="#section-organic" class="list-header__link">section-organic</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main class="page">
+			<div class="page__container">
+				<!-- section-features -->
+				<div class="section-features" id="section-features">
+					<div class="section-features__block">
+						<!-- 
+							Це БЕМ-блок list-features 
+							та БЕМ-елемент БЕМ-блоку section-features 
+							одночасно
+										-->
+						<ul class="section-features__list list-features">
+							<li class="list-features__item">
+								<a href="#" class="list-features__link">
+									<img src="img/icons/shipping-icon.svg" alt="shipping-icon" class="list-features__icon">
+									<h3 class="list-features__title">Free Shipping</h3>
+									<p>Free shipping with discount</p>
+								</a>
+							</li>
+							<li class="list-features__item">
+								<a href="#" class="list-features__link">
+									<img src="img/icons/support-icon.svg" alt="support-icon" class="list-features__icon">
+									<h3 class="list-features__title">Great Support 24/7</h3>
+									<p>Instant access to Contact</p>
+								</a>
+							</li>
+							<li class="list-features__item">
+								<a href="#" class="list-features__link">
+									<img src="img/icons/payment-icon.svg" alt="payment-icon" class="list-features__icon">
+									<h3 class="list-features__title">100% Sucure Payment</h3>
+									<p>We ensure your money is save</p>
+								</a>
+							</li>
+							<li class="list-features__item">
+								<a href="#" class="list-features__link">
+									<img src="img/icons/money-back-icon.svg" alt="money-back-icon" class="list-features__icon">
+									<h3 class="list-features__title">Money-Back Guarantee</h3>
+									<p>30 days money-back</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- featured-products -->
+				<div class="featured-products" id="featured-products">
+					<div class="featured-products__block">
+						<h2 class="featured-products__title title">Featured Products</h2>
+						<!-- Це окремий БЕМ-блок view-arrow -->
+						<a href="#" class="view-arrow"></a>
+						<!-- 
+							Це БЕМ-блок card-product  
+							та БЕМ-елемент БЕМ-блоку featured-products 
+							одночасно
+										-->
+						<div class="featured-products__cards card-product">
+							<!-- card-01 -->
+							<div class="card-product__box">
+								<div class="card-product__content">
+									<picture>
+										<source srcset="img/apple-img.webp" type="image/webp">
+										<source srcset="img/apple-img.avif" type="image/avif">
+										<img class="card-product__image" src="img/apple-img.jpg" alt="apple image">
+									</picture>
+									<p>Green Apple</p>
+									<strong>$14.99</strong>
+									<!-- Це окремий БЕМ-блок bag-icon -->
+									<div class="bag-icon">
+										<img class="bag-icon__image" src="img/icons/Bag-icon.svg" alt="bag icon">
+									</div>
+									<!-- Це окремий БЕМ-блок rating-icon -->
+									<div class="rating-icon">
+										<img class="rating-icon__image" src="img/icons/Rating.svg" alt="rating icons">
+									</div>
+								</div>
+							</div>
+							<!-- card-02 -->
+							<div class="card-product__box">
+								<div class="card-product__content">
+									<picture>
+										<source srcset="img/cabbage-img.webp" type="image/webp">
+										<source srcset="img/cabbage-img.avif" type="image/avif">
+										<img class="card-product__image" src="img/cabbage-img.jpg" alt="cabbage image">
+									</picture>
+									<p>Green Apple</p>
+									<strong>$14.99</strong>
+									<!-- Це окремий БЕМ-блок bag-icon -->
+									<div class="bag-icon">
+										<img class="bag-icon__image" src="img/icons/Bag-icon.svg" alt="bag icon">
+									</div>
+									<!-- Це окремий БЕМ-блок rating-icon -->
+									<div class="rating-icon">
+										<img class="rating-icon__image" src="img/icons/Rating.svg" alt="rating icons">
+									</div>
+								</div>
+							</div>
+							<!-- card-03 -->
+							<div class="card-product__box">
+								<div class="card-product__content">
+									<picture>
+										<source srcset="img/pepper-img.webp" type="image/webp">
+										<source srcset="img/pepper-img.avif" type="image/avif">
+										<img class="card-product__image" src="img/pepper-img.jpg" alt="pepper image">
+									</picture>
+									<p>Green Apple</p>
+									<strong>$14.99</strong>
+									<!-- Це окремий БЕМ-блок bag-icon -->
+									<div class="bag-icon">
+										<img class="bag-icon__image" src="img/icons/Bag-icon.svg" alt="bag icon">
+									</div>
+									<!-- Це окремий БЕМ-блок rating-icon -->
+									<div class="rating-icon">
+										<img class="rating-icon__image" src="img/icons/Rating.svg" alt="rating icons">
+									</div>
+								</div>
+							</div>
+							<!-- card-04 -->
+							<div class="card-product__box">
+								<div class="card-product__content">
+									<picture>
+										<source srcset="img/finger-img.webp" type="image/webp">
+										<source srcset="img/finger-img.avif" type="image/avif">
+										<img class="card-product__image" src="img/finger-img.jpg" alt="finger image">
+									</picture>
+									<p>Green Apple</p>
+									<strong>$14.99</strong>
+									<!-- Це окремий БЕМ-блок bag-icon -->
+									<div class="bag-icon">
+										<img class="bag-icon__image" src="img/icons/Bag-icon.svg" alt="bag icon">
+									</div>
+									<!-- Це окремий БЕМ-блок rating-icon -->
+									<div class="rating-icon">
+										<img class="rating-icon__image" src="img/icons/Rating.svg" alt="rating icons">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- section-categories -->
+				<div class="section-categories" id="section-categories">
+					<div class="section-categories__block">
+						<!-- 
+							Це БЕМ-блок title  
+							та БЕМ-елемент БЕМ-блоку section-categories 
+							одночасно
+										-->
+						<h2 class="section-categories__title title">Shop by Top Categories</h2>
+						<!-- Це окремий БЕМ-блок view-arrow -->
+						<a href="#" class="view-arrow"></a>
+						<div class="section-categories__inner">
+							<!-- Це окремий БЕМ-блок arrow-icon -->
+							<div class="arrow-icon">
+								<img src="img/icons/arrow-left.svg" alt="arrow-left">
+							</div>
+							<!-- 
+								Це БЕМ-блок card-categories  
+								та БЕМ-елемент БЕМ-блоку section-categories 
+								одночасно
+											-->
+							<div class="section-categories__cards card-categories">
+								<!-- card-01 -->
+								<div class="card-categories__icon">
+									<img src="img/icons/vegetable-icon.svg" alt="vegetable-icon">
+								</div>
+								<div class="card-categories__content">
+									<strong>Vegetables</strong>
+									<p>165 Products</p>
+								</div>
+								<!-- card-02 -->
+								<div class="card-categories__icon">
+									<img src="img/icons/fruits-icon.svg" alt="fruits-icon">
+								</div>
+								<div class="card-categories__content">
+									<strong>Fresh Fruit</strong>
+									<p>137 Products</p>
+								</div>
+								<!-- card-03 -->
+								<div class="card-categories__icon">
+									<img src="img/icons/fish-icon.svg" alt="fish-icon">
+								</div>
+								<div class="card-categories__content">
+									<strong>Fish</strong>
+									<p>34 Products</p>
+								</div>
+								<!-- card-04 -->
+								<div class="card-categories__icon">
+									<img src="img/icons/meat-icon.svg" alt="meat-icon">
+								</div>
+								<div class="card-categories__content">
+									<strong>Meat</strong>
+									<p>165 Products</p>
+								</div>
+								<!-- card-05 -->
+								<div class="card-categories__icon">
+									<img src="img/icons/soft-drink-icon.svg" alt="soft-drink-icon">
+								</div>
+								<div class="card-categories__content">
+									<strong>Water and Drinks</strong>
+									<p>48 Products</p>
+								</div>
+								<!-- card-06 -->
+								<div class="card-categories__icon">
+									<img src="img/icons/snacks-icon.svg" alt="snacks-icon">
+								</div>
+								<div class="card-categories__content">
+									<strong>Snacks</strong>
+									<p>165 Products</p>
+								</div>
+								<!-- arrow-icon -->
+								<div class="arrow-icon">
+									<img src="img/icons/arow-rigth.svg" alt="arow-rigth">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- section-organic -->
+				<div class="section-organic" id="section-organic">
+					<div class="section-organic__block">
+						<div class="section-organic__image-01">
+							<picture>
+								<source srcset="img/organic-food-01.webp" type="image/webp">
+								<source srcset="img/organic-food-01.avif" type="image/avif">
+								<img src="img/organic-food-01.jpg" alt="a man is standing and holding apples on his shoulder">
+							</picture>
+						</div>
+						<div class="section-organic__image-02">
+							<picture>
+								<source srcset="img/organic-food-02.webp" type="image/webp">
+								<source srcset="img/organic-food-02.avif" type="image/avif">
+								<img src="img/organic-food-02.jpg" alt="a man is smiling and gathering apples">
+							</picture>
+						</div>
+						<!-- 
+							Це БЕМ-блок organic-food  
+							та БЕМ-елемент БЕМ-блоку section-organic 
+							одночасно
+										-->
+						<div class="section-organic__content organic-food">
+							<h2 class="section-organic__title title ">100% Trusted Organic Food Store</h2>
+							<ul class="organic-food__list">
+								<li class="organic-food__item">
+									<h3 class="organic-food__title">Healthy & natural food for lovers of healthy food.</h3>
+									<p>Ut quis tempus erat. Phasellus euismod bibendum magna non tristique. Pellentesque semper
+										vestibulum elit sed
+										condimentum. Nunc pretium fermentum interdum.
+									</p>
+								</li>
+								<li class="organic-food__item">
+									<h3 class="organic-food__title">Every day fresh and quality products for you.</h3>
+									<p>Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex.
+										Morbi sem neque,aliquam sed orci et,
+										rhoncus lobortis felis. Sed vestibulum nisl sit amet sapien.
+									</p>
+								</li>
+							</ul>
+							<!-- Це окремий БЕМ-блок button -->
+							<a href="#" class="button">Shop Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+
+	<!-- footer -->
+	<footer class="section-footer">
+		<div class="section-footer__container">
+			<!-- 
+				Це БЕМ-блок list-footer  
+				та БЕМ-елемент БЕМ-блоку section-footer 
+				одночасно
+							-->
+			<ul class="section-footer__list list-footer">
+				<li class="list-footer__item">
+					<a href="#section-features" class="list-footer__link">features</a>
+				</li>
+				<li class="list-footer__item">
+					<a href="#featured-products" class="list-footer__link">featured-products</a>
+				</li>
+				<li class="list-footer__item">
+					<a href="#section-categories" class="list-footer__link">categories</a>
+				</li>
+				<li class="list-footer__item">
+					<a href="#section-organic" class="list-footer__link">organic-food</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+</body>
+
+</html>
