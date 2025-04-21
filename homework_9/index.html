@@ -14,23 +14,18 @@
 		<!-- section-header -->
 		<header class="section-header" id="up">
 			<div class="section-header__container">
-				<!-- 
-					Це БЕМ-блок list-header  
-					та БЕМ-елемент БЕМ-блоку section-header 
-					одночасно
-								-->
-				<ul class="section-header__list list-header">
-					<li class="list-header__item">
-						<a href="#section-features" class="list-header__link">section-features</a>
+				<ul class="section-header__menu menu-header menu">
+					<li class="menu-header__item menu__item">
+						<a href="#section-features" class="menu-header__link menu__link">section-features</a>
 					</li>
-					<li class="list-header__item">
-						<a href="#featured-products" class="list-header__link">featured-products</a>
+					<li class="menu-header__item menu__item">
+						<a href="#featured-products" class="menu-header__link menu__link">featured-products</a>
 					</li>
-					<li class="list-header__item">
-						<a href="#section-categories" class="list-header__link">section-categories</a>
+					<li class="menu-header__item menu__item">
+						<a href="#section-categories" class="menu-header__link menu__link">section-categories</a>
 					</li>
-					<li class="list-header__item">
-						<a href="#section-organic" class="list-header__link">section-organic</a>
+					<li class="menu-header__item menu__item">
+						<a href="#section-organic" class="menu-header__link menu__link">section-organic</a>
 					</li>
 				</ul>
 			</div>
@@ -41,289 +36,373 @@
 			<div class="page__container">
 				<!-- section-features -->
 				<div class="section-features" id="section-features">
-					<div class="section-features__block">
-						<!-- 
-							Це БЕМ-блок list-features 
-							та БЕМ-елемент БЕМ-блоку section-features 
-							одночасно
-										-->
-						<ul class="section-features__list list-features">
-							<li class="list-features__item">
-								<a href="#" class="list-features__link">
-									<img src="img/icons/shipping-icon.svg" alt="shipping-icon" class="list-features__icon">
-									<h3 class="list-features__title">Free Shipping</h3>
-									<p>Free shipping with discount</p>
-								</a>
-							</li>
-							<li class="list-features__item">
-								<a href="#" class="list-features__link">
-									<img src="img/icons/support-icon.svg" alt="support-icon" class="list-features__icon">
-									<h3 class="list-features__title">Great Support 24/7</h3>
-									<p>Instant access to Contact</p>
-								</a>
-							</li>
-							<li class="list-features__item">
-								<a href="#" class="list-features__link">
-									<img src="img/icons/payment-icon.svg" alt="payment-icon" class="list-features__icon">
-									<h3 class="list-features__title">100% Sucure Payment</h3>
-									<p>We ensure your money is save</p>
-								</a>
-							</li>
-							<li class="list-features__item">
-								<a href="#" class="list-features__link">
-									<img src="img/icons/money-back-icon.svg" alt="money-back-icon" class="list-features__icon">
-									<h3 class="list-features__title">Money-Back Guarantee</h3>
-									<p>30 days money-back</p>
-								</a>
-							</li>
-						</ul>
+					<div class="section-features__container">
+						<div class="section-features__body">
+							<!-- section-features__list -->
+							<ul class="section-features__list list-features">
+								<li class="list-features__item">
+									<a href="#" class="list-features__link">
+										<div class="list-features__image">
+											<img src="img/icons/shipping-icon.svg" alt="shipping-icon" class="list-features__icon">
+										</div>
+										<h3 class="list-features__title">free shipping</h3>
+										<div class="list-features__text">
+											<p>Free shipping with discount</p>
+										</div>
+									</a>
+								</li>
+								<li class="list-features__item">
+									<a href="#" class="list-features__link">
+										<div class="list-features__image">
+											<img src="img/icons/support-icon.svg" alt="support-icon" class="list-features__icon">
+										</div>
+										<h3 class="list-features__title">great support 24/7</h3>
+										<div class="list-features__text">
+											<p>Instant access to Contact</p>
+										</div>
+									</a>
+								</li>
+								<li class="list-features__item">
+									<a href="#" class="list-features__link">
+										<div class="list-features__image">
+											<img src="img/icons/payment-icon.svg" alt="payment-icon" class="list-features__icon">
+										</div>
+										<h3 class="list-features__title">100% sucure payment</h3>
+										<div class="list-features__text">
+											<p>We ensure your money is save</p>
+										</div>
+									</a>
+								</li>
+								<li class="list-features__item">
+									<a href="#" class="list-features__link">
+										<div class="list-features__image">
+											<img src="img/icons/money-back-icon.svg" alt="money-back-icon"
+												class="list-features__icon">
+										</div>
+										<h3 class="list-features__title">money-back guarantee</h3>
+										<div class="list-features__text">
+											<p>30 days money-back</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 
 				<!-- featured-products -->
 				<div class="featured-products" id="featured-products">
-					<div class="featured-products__block">
-						<h2 class="featured-products__title title">Featured Products</h2>
-						<!-- Це окремий БЕМ-блок view-arrow -->
-						<a href="#" class="view-arrow"></a>
-						<!-- Це окремий БЕМ-блок button-sale -->
-						<a href="#" class="button-sale button-sale--red">Sale 50%</a>
-						<!-- 
-							Це БЕМ-блок card-product  
-							та БЕМ-елемент БЕМ-блоку featured-products 
-							одночасно
-										-->
-						<div class="featured-products__cards card-product">
-							<!-- card-01 -->
-							<div class="card-product__box">
-								<div class="card-product__content">
-									<picture>
-										<source srcset="img/apple-img.webp" type="image/webp">
-										<source srcset="img/apple-img.avif" type="image/avif">
-										<img class="card-product__image" src="img/apple-img.jpg" alt="apple image">
-									</picture>
-									<p>Green Apple</p>
-									<strong>$14.99</strong>
-									<!-- Це окремий БЕМ-блок bag-icon -->
-									<div class="bag-icon">
-										<img class="bag-icon__image" src="img/icons/Bag-icon.svg" alt="bag icon">
-									</div>
-									<!-- Це окремий БЕМ-блок rating-content -->
-									<div class="rating-content">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon rating-content__icon--active"
-											src="img/icons/Star-empty.svg" alt="star icon">
-									</div>
+					<div class="featured-products__container">
+						<div class="featured-products__body">
+							<div class="featured-products__block-header block-header block-header--margin">
+								<h2 class="block-header__title title">Featured Products</h2>
+								<div class="block-header__buttom">
+									<a href="#" class="block-header__link">View All</a>
 								</div>
 							</div>
-							<!-- card-02 -->
-							<div class="card-product__box">
-								<div class="card-product__content">
-									<picture>
-										<source srcset="img/cabbage-img.webp" type="image/webp">
-										<source srcset="img/cabbage-img.avif" type="image/avif">
-										<img class="card-product__image" src="img/cabbage-img.jpg" alt="cabbage image">
-									</picture>
-									<p>Green Apple</p>
-									<strong>$14.99</strong>
-									<!-- Це окремий БЕМ-блок bag-icon -->
-									<div class="bag-icon">
-										<img class="bag-icon__image" src="img/icons/Bag-icon.svg" alt="bag icon">
+							<span class="product-sale product-sale--red">Sale 50%</span>
+							<ul class="featured-products__cards card-product">
+								<!-- card-product-01 -->
+								<li class="card-product__body">
+									<div class="card-product__inner">
+										<a href="#" class="card-product__image-link">
+											<img src="img/apple-img.jpg" alt="apple image">
+										</a>
+										<div class="card-product__content">
+											<a href="#" class="card-product__title-link">
+												<h3>Green Apple</h3>
+											</a>
+											<div class="card-product__item-price price-item">
+												<span class="price-item__number price-item__number--current">$14.99</span>
+												<span class="price-item__number price-item__number--old">$20.99</span>
+											</div>
+											<div class="card-product__basket basket">
+												<a href="#" class="basket__link">
+													<img class="basket__icon" src="img/icons/Bag-icon.svg" alt="bag icon">
+												</a>
+											</div>
+											<div class="card-product__rating-stars rating-star">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--inactive"
+													src="img/icons/Star-empty.svg" alt="star icon">
+											</div>
+										</div>
 									</div>
-									<!-- Це окремий БЕМ-блок rating-content -->
-									<div class="rating-content">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon rating-content__icon--active"
-											src="img/icons/Star-empty.svg" alt="star icon">
+								</li>
+								<!-- card-product-02 -->
+								<li class="card-product__body">
+									<div class="card-product__inner">
+										<a href="#" class="card-product__image-link">
+											<img src="img/cabbage-img.jpg" alt="cabbage image">
+										</a>
+										<div class="card-product__content">
+											<a href="#" class="card-product__title-link">
+												<h3>Chanise Cabbage</h3>
+											</a>
+											<div class="card-product__item-price price-item">
+												<span class="price-item__number price-item__number--current">$14.99</span>
+											</div>
+											<div class="card-product__basket basket">
+												<a href="#" class="basket__link">
+													<img class="basket__icon" src="img/icons/Bag-icon.svg" alt="bag icon">
+												</a>
+											</div>
+											<div class="card-product__rating-stars rating-star">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--inactive"
+													src="img/icons/Star-empty.svg" alt="star icon">
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<!-- card-03 -->
-							<div class="card-product__box">
-								<div class="card-product__content">
-									<picture>
-										<source srcset="img/pepper-img.webp" type="image/webp">
-										<source srcset="img/pepper-img.avif" type="image/avif">
-										<img class="card-product__image" src="img/pepper-img.jpg" alt="pepper image">
-									</picture>
-									<p>Green Apple</p>
-									<strong>$14.99</strong>
-									<!-- Це окремий БЕМ-блок bag-icon -->
-									<div class="bag-icon">
-										<img class="bag-icon__image" src="img/icons/Bag-icon.svg" alt="bag icon">
+								</li>
+								<!-- card-product-03 -->
+								<li class="card-product__body">
+									<div class="card-product__inner">
+										<a href="#" class="card-product__image-link">
+											<img src="img/pepper-img.jpg" alt="pepper image">
+										</a>
+										<div class="card-product__content">
+											<a href="#" class="card-product__title-link">
+												<h3>Green Capsicum</h3>
+											</a>
+											<div class="card-product__item-price price-item">
+												<span class="price-item__number price-item__number--current">$14.99</span>
+											</div>
+											<div class="card-product__basket basket">
+												<a href="#" class="basket__link">
+													<img class="basket__icon" src="img/icons/Bag-icon.svg" alt="bag icon">
+												</a>
+											</div>
+											<div class="card-product__rating-stars rating-star">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--inactive"
+													src="img/icons/Star-empty.svg" alt="star icon">
+											</div>
+										</div>
 									</div>
-									<!-- Це окремий БЕМ-блок rating-content -->
-									<div class="rating-content">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon rating-content__icon--active"
-											src="img/icons/Star-empty.svg" alt="star icon">
+								</li>
+								<!-- card-product-04 -->
+								<li class="card-product__body">
+									<div class="card-product__inner">
+										<a href="#" class="card-product__image-link">
+											<img src="img/finger-img.jpg" alt="finger image">
+										</a>
+										<div class="card-product__content">
+											<a href="#" class="card-product__title-link">
+												<h3>Ladies Finger</h3>
+											</a>
+											<div class="card-product__item-price price-item">
+												<span class="price-item__number price-item__number--current">$14.99</span>
+											</div>
+											<div class="card-product__basket basket">
+												<a href="#" class="basket__link">
+													<img class="basket__icon" src="img/icons/Bag-icon.svg" alt="bag icon">
+												</a>
+											</div>
+											<div class="card-product__rating-stars rating-star">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--active" src="img/icons/Star.svg"
+													alt="star icon">
+												<img class="rating-star__icon rating-star__icon--inactive"
+													src="img/icons/Star-empty.svg" alt="star icon">
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<!-- card-04 -->
-							<div class="card-product__box">
-								<div class="card-product__content">
-									<picture>
-										<source srcset="img/finger-img.webp" type="image/webp">
-										<source srcset="img/finger-img.avif" type="image/avif">
-										<img class="card-product__image" src="img/finger-img.jpg" alt="finger image">
-									</picture>
-									<p>Green Apple</p>
-									<strong>$14.99</strong>
-									<!-- Це окремий БЕМ-блок bag-icon -->
-									<div class="bag-icon">
-										<img class="bag-icon__image" src="img/icons/Bag-icon.svg" alt="bag icon">
-									</div>
-									<!-- Це окремий БЕМ-блок rating-content -->
-									<div class="rating-content">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon" src="img/icons/Star.svg" alt="star icon">
-										<img class="rating-content__icon rating-content__icon--active"
-											src="img/icons/Star-empty.svg" alt="star icon">
-									</div>
-								</div>
-							</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 
 				<!-- section-categories -->
 				<div class="section-categories" id="section-categories">
-					<div class="section-categories__block">
-						<!-- 
-							Це БЕМ-блок title  
-							та БЕМ-елемент БЕМ-блоку section-categories 
-							одночасно
-										-->
-						<h2 class="section-categories__title title">Shop by Top Categories</h2>
-						<!-- Це окремий БЕМ-блок view-arrow -->
-						<a href="#" class="view-arrow"></a>
-						<div class="section-categories__inner">
-							<!-- Це окремий БЕМ-блок arrow-icon -->
-							<div class="arrow-icon arrow-icon--left">
-								<img class="arrow-icon__img" src="img/icons/arrow-left.svg" alt="arrow-left">
-							</div>
-							<!-- 
-								Це БЕМ-блок card-categories  
-								та БЕМ-елемент БЕМ-блоку section-categories 
-								одночасно
-											-->
-							<div class="section-categories__cards card-categories">
-								<!-- card-01 -->
-								<div class="card-categories__icon">
-									<img src="img/icons/vegetable-icon.svg" alt="vegetable-icon">
-								</div>
-								<div class="card-categories__content">
-									<span>Vegetables</span>
-									<p>165 Products</p>
-								</div>
-								<!-- card-02 -->
-								<div class="card-categories__icon">
-									<img src="img/icons/fruits-icon.svg" alt="fruits-icon">
-								</div>
-								<div class="card-categories__content">
-									<span>Fresh Fruit</span>
-									<p>137 Products</p>
-								</div>
-								<!-- card-03 -->
-								<div class="card-categories__icon">
-									<img src="img/icons/fish-icon.svg" alt="fish-icon">
-								</div>
-								<div class="card-categories__content">
-									<span>Fish</span>
-									<p>34 Products</p>
-								</div>
-								<!-- card-04 -->
-								<div class="card-categories__icon">
-									<img src="img/icons/meat-icon.svg" alt="meat-icon">
-								</div>
-								<div class="card-categories__content">
-									<span>Meat</span>
-									<p>165 Products</p>
-								</div>
-								<!-- card-05 -->
-								<div class="card-categories__icon">
-									<img src="img/icons/soft-drink-icon.svg" alt="soft-drink-icon">
-								</div>
-								<div class="card-categories__content">
-									<span>Water and Drinks</span>
-									<p>48 Products</p>
-								</div>
-								<!-- card-06 -->
-								<div class="card-categories__icon">
-									<img src="img/icons/snacks-icon.svg" alt="snacks-icon">
-								</div>
-								<div class="card-categories__content">
-									<span>Snacks</span>
-									<p>165 Products</p>
-								</div>
-								<!-- Це окремий БЕМ-блок arrow-icon -->
-								<div class="arrow-icon arrow-icon--right">
-									<img class="arrow-icon__img" src="img/icons/arow-rigth.svg" alt="arow-rigth">
+					<div class="section-categories__container">
+						<div class="section-categories__body">
+							<div class="section-categories__block-header block-header block-header--margin">
+								<h2 class="block-header__title title">Shop by Top Categories</h2>
+								<div class="block-header__buttom">
+									<a href="#" class="block-header__link">View All</a>
 								</div>
 							</div>
+							<!-- arrow-button -->
+							<a href="#" class="section-categories__arrow-button arrow-button  arrow-button--left">
+								<div class="arrow-button__box">
+									<img class="arrow-button__img" src="img/icons/arrow-left.svg" alt="arrow-button-left">
+								</div>
+							</a>
+							<div class="section-categories__inner">
+								<!-- section-categories__cards -->
+								<ul class="section-categories__cards card-categories">
+									<!-- card-01 -->
+									<li class="card-categories__item">
+										<a href="#" class="card-categories__link">
+											<div class="card-categories__body">
+												<div class="card-categories__icon">
+													<img src="img/icons/vegetable-icon.svg" alt="vegetable-icon">
+												</div>
+												<div class="card-categories__content">
+													<h3 class="card-categories__title">Vegetables</h3>
+													<p>165 Products</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- card-02 -->
+									<li class="card-categories__item">
+										<a href="" class="card-categories__link">
+											<div class="card-categories__body">
+												<div class="card-categories__icon">
+													<img src="img/icons/fruits-icon.svg" alt="fruits-icon">
+												</div>
+												<div class="card-categories__content">
+													<h3 class="card-categories__title">Fresh Fruit</h3>
+													<p>137 Products</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- card-03 -->
+									<li class="card-categories__item">
+										<a href="" class="card-categories__link">
+											<div class="card-categories__body">
+												<div class="card-categories__icon">
+													<img src="img/icons/fish-icon.svg" alt="fish-icon">
+												</div>
+												<div class="card-categories__content">
+													<h3 class="card-categories__title">Fish</h3>
+													<p>34 Products</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- card-04 -->
+									<li class="card-categories__item">
+										<a href="" class="card-categories__link">
+											<div class="card-categories__body">
+												<div class="card-categories__icon">
+													<img src="img/icons/meat-icon.svg" alt="meat-icon">
+												</div>
+												<div class="card-categories__content">
+													<h3 class="card-categories__title">Meat</h3>
+													<p>165 Products</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- card-05 -->
+									<li class="card-categories__item">
+										<a href="" class="card-categories__link">
+											<div class="card-categories__body">
+												<div class="card-categories__icon">
+													<img src="img/icons/soft-drink-icon.svg" alt="soft-drink-icon">
+												</div>
+												<div class="card-categories__content">
+													<h3 class="card-categories__title">Water and Drinks</h3>
+													<p>48 Products</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- card-06 -->
+									<li class="card-categories__item">
+										<a href="" class="card-categories__link">
+											<div class="card-categories__body">
+												<div class="card-categories__icon">
+													<img src="img/icons/snacks-icon.svg" alt="snacks-icon">
+												</div>
+												<div class="card-categories__content">
+													<h3 class="card-categories__title">Snacks</h3>
+													<p>165 Products</p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- arrow-button -->
+							<a href="#" class="section-categories__arrow-button arrow-button  arrow-button--right">
+								<div class="arrow-button__box">
+									<img class="arrow-button__img" src="img/icons/arow-rigth.svg" alt="arrow-button-left">
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
 
 				<!-- section-organic -->
 				<div class="section-organic" id="section-organic">
-					<div class="section-organic__block">
-						<div class="section-organic__image-01">
-							<picture>
-								<source srcset="img/organic-food-01.webp" type="image/webp">
-								<source srcset="img/organic-food-01.avif" type="image/avif">
-								<img src="img/organic-food-01.jpg" alt="a man is standing and holding apples on his shoulder">
-							</picture>
-						</div>
-						<div class="section-organic__image-02">
-							<picture>
-								<source srcset="img/organic-food-02.webp" type="image/webp">
-								<source srcset="img/organic-food-02.avif" type="image/avif">
-								<img src="img/organic-food-02.jpg" alt="a man is smiling and gathering apples">
-							</picture>
-						</div>
-						<!-- 
-							Це БЕМ-блок organic-food  
-							та БЕМ-елемент БЕМ-блоку section-organic 
-							одночасно
-										-->
-						<div class="section-organic__content organic-food">
-							<h2 class="section-organic__title title ">100% Trusted Organic Food Store</h2>
-							<ul class="organic-food__list">
-								<li class="organic-food__item">
-									<div class="organic-food__content">
-										<h3 class="organic-food__title">Healthy & natural food for lovers of healthy food.</h3>
-										<p>Ut quis tempus erat. Phasellus euismod bibendum magna non tristique. Pellentesque
-											semper
-											vestibulum elit sed
-											condimentum. Nunc pretium fermentum interdum.
-										</p>
-									</div>
-								</li>
-								<li class="organic-food__item">
-									<div class="organic-food__content">
-										<h3 class="organic-food__title">Every day fresh and quality products for you.</h3>
-										<p>Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex.
-											Morbi sem neque,aliquam sed orci et,
-											rhoncus lobortis felis. Sed vestibulum nisl sit amet sapien.
-										</p>
-									</div>
-								</li>
-							</ul>
-							<!-- Це окремий БЕМ-блок button -->
-							<a href="#" class="button">Shop Now</a>
+					<div class="section-organic__container">
+						<div class="section-organic__body">
+							<div class="section-organic__images">
+								<div class="section-organic__image-01 image">
+									<img src="img/organic-food-01.jpg"
+										alt="a man is standing and holding apples on his shoulder">
+								</div>
+								<!-- <picture class="section-organic__image-01 image">
+									<source srcset="img/organic-food-01.webp" type="image/webp">
+									<source srcset="img/organic-food-01.avif" type="image/avif">
+								</picture> -->
+								<div class="section-organic__image-02 image">
+									<img src="img/organic-food-02.jpg" alt="a man is smiling and gathering apples">
+								</div>
+
+								<!-- <picture class="section-organic__image-02 image">
+									<source srcset="img/organic-food-02.webp" type="image/webp">
+									<source srcset="img/organic-food-02.avif" type="image/avif">
+								</picture> -->
+							</div>
+							<!-- section-organic__content -->
+							<div class="section-organic__content organic-food">
+								<h2 class="section-organic__title title ">100% Trusted Organic Food Store</h2>
+								<ul class="organic-food__list list-store">
+									<li class="list-store__item">
+										<div class="list-store__content">
+											<h3 class="list-store__title">Healthy & natural food for lovers of healthy food. </h3>
+											<p>Ut quis tempus erat. Phasellus euismod bibendum magna non tristique. Pellentesque
+												semper
+												vestibulum elit sed
+												condimentum. Nunc pretium fermentum interdum.
+											</p>
+										</div>
+									</li>
+									<li class="list-store__item">
+										<div class="list-store__content">
+											<h3 class="list-store__title">Every day fresh and quality products for you.</h3>
+											<p>Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex.
+												Morbi sem neque,aliquam sed orci et,
+												rhoncus lobortis felis. Sed vestibulum nisl sit amet sapien.
+											</p>
+										</div>
+									</li>
+								</ul>
+								<a href="#" class="button">Shop Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -335,23 +414,18 @@
 	<!-- footer -->
 	<footer class="section-footer">
 		<div class="section-footer__container">
-			<!-- 
-				Це БЕМ-блок list-footer  
-				та БЕМ-елемент БЕМ-блоку section-footer 
-				одночасно
-							-->
-			<ul class="section-footer__list list-footer">
-				<li class="list-footer__item">
-					<a href="#section-features" class="list-footer__link">features</a>
+			<ul class="section-footer__menu menu-footer menu">
+				<li class="menu-footer__item menu__item">
+					<a href="#section-features" class="menu-footer__link menu__link">section-features</a>
 				</li>
-				<li class="list-footer__item">
-					<a href="#featured-products" class="list-footer__link">featured-products</a>
+				<li class="menu-footer__item menu__item">
+					<a href="#featured-products" class="menu-footer__link menu__link">featured-products</a>
 				</li>
-				<li class="list-footer__item">
-					<a href="#section-categories" class="list-footer__link">categories</a>
+				<li class="menu-footer__item menu__item">
+					<a href="#section-categories" class="menu-footer__link menu__link">section-categories</a>
 				</li>
-				<li class="list-footer__item">
-					<a href="#section-organic" class="list-footer__link">organic-food</a>
+				<li class="menu-footer__item menu__item">
+					<a href="#section-organic" class="menu-footer__link menu__link">section-organic</a>
 				</li>
 			</ul>
 		</div>

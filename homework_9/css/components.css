@@ -1,0 +1,86 @@
+/* arrow-button */
+.arrow-button {
+	border: 1px solid #E6E6E6;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #fff;
+	line-height: 43px;
+	display: inline-block;
+}
+.arrow-button:hover {
+	background-color: #00B207;
+}
+.arrow-button__box {
+	text-align: center;
+}
+.arrow-button--left {
+	margin-bottom: 20px;
+}
+
+.arrow-button--right {}
+
+.arrow-button__img {
+	width: 15px;
+	height: 12px;
+}
+/*======= basket =======*/
+.basket {}
+
+.basket__link {
+	/* width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #F2F2F2;
+	display: inline-block; */
+}
+.basket__icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #F2F2F2;
+	padding: 10px;
+}
+.card-product__inner:hover .basket__icon {
+	background-color: #00B207;
+}
+.basket__link .basket__icon:hover  {
+	background-color: #2C742F;
+}
+
+
+/* button */
+.button {
+	background-color: #00B207;
+	border-radius: 43px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	padding: 16px 40px;
+	min-width: 192px;
+}
+.button:hover {
+	background-color: #2C742F;
+}
+.button::after {
+	content: "";
+	background: url("../img/icons/arrow-button.svg")center 0 no-repeat;
+	width: 15px;
+	height: 15px;
+	min-height: 15px;
+	margin-left: 16px;
+	vertical-align: middle;
+}
+
+/* product-sale */
+.product-sale {
+	color: #fff;
+	padding: 3px 8px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.product-sale--red {
+	background-color: #EA4B48;
+}
+
