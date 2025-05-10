@@ -1,0 +1,656 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap");
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* reset */
+@import url("reset.css");
+
+/* components */
+@import url("components.css");
+
+/* Основні стилі */
+body {
+	color: #000;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5; 
+	background-color: #f5f5f5;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+ /* [class*="container"] {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 15px;
+} */
+
+
+/* =========== common =========== */
+.page {
+	
+}
+.page__container {}
+
+.hero-title {
+	font-size: 48px;
+	text-align: center;
+	font-weight: 700;
+	padding: 30px 0;
+	color: red;
+}
+.title {
+	font-size: 38px;
+	font-weight: 700;
+	text-align: center;
+	padding: 30px 0;
+}
+
+
+
+/* =========== scene =========== */
+.scene {
+	position: relative;
+	/* display: none; */
+}
+.car-container {
+	margin: 0 auto;
+	padding: 300px 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.car {}
+
+.car__jeep {
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+	z-index: 10;
+	top: 0;
+	right: 10%;
+	animation-name: move;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes move {
+	0% {
+		right: -450px;
+	}
+	100% {
+		right: 2000px;
+	}
+}
+.car__jeep:hover {
+	animation-play-state: paused;
+}
+
+
+/* ============== roof ============ */
+.roof {
+	position: relative;
+	font-size: 0;
+	/* transform: translate(0px, 1px); */
+}
+.roof::before,
+.roof::after {
+	content: "";
+	background-color: #231f20;
+	position: absolute;
+	width: 15px;
+}
+.roof::before {
+	height: 150px;
+	top: 0;
+	right: 80px;
+	transform: rotate(-30deg) translate(1px, -4px);
+}
+.roof::after {
+	height: 75px;
+	top: 58px;
+	right: 90px;
+}
+
+.roof__item {}
+
+.roof__item--left {
+	width: 40%;
+	height: 130px;
+	background-color: #4e9589;
+	margin: 0 auto;
+	transform: skew(-17deg, 0deg);
+	position: relative;
+	border-radius: 10px 10px 0 0;
+}
+.roof__item--left::after {
+	content: "";
+	width: 35px;
+	height: 100%;
+	background-color: #4e9589;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: skew(15deg);
+	transform-origin: top;
+	border-radius: 0 10px 0 0 ;
+}
+.window {
+	width: 135px;
+	height: 114px;
+	background-color: #bfe6f2;
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	z-index: 4;
+	border-top: 3px solid darkgreen;
+	border-left: 3px solid darkgreen;
+	border-bottom: 3px solid darkgreen;
+	border-radius: 10px 10px 0 10px;
+}
+.window::after {
+	content: "";
+	width: 35px;
+	height: 102%;
+	background-color: #bfe6f2;
+	transform: skew(15deg) translate(97px, 0);
+	transform-origin: top left;
+	border-right: 3px solid darkgreen;
+	border-bottom: 3px solid darkgreen;
+	border-radius:0 10px 10px 0 ;
+}
+.mirror {
+	width: 20px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #000;
+	position: absolute;
+	bottom: -10px;
+	left: 100px;
+	z-index: 5;
+}
+.door {
+	width: 161px;
+	height: 130px;
+	background-color: transparent;
+	border: 3px solid darkgreen;
+	border-top: none;
+	border-radius: 0 0 30px 10px;
+	position: absolute;
+	top: -8px;
+	left: -1px;
+	z-index: 3;
+}
+.door__handle {
+	width: 27px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #2d2b2a;
+	position: absolute;
+	top: 30px;
+	right: 15px;
+}
+.roof__item--right {
+	position: relative;
+}
+
+.pipe {
+	background-color: #231f20;
+	width: 20px;
+	position: absolute;
+}
+.short-pipe {}
+
+.long-pipe {
+	height: 150px;
+	top: 0;
+	left: 0;
+}
+
+/* ============= body ============ */
+.body {
+	font-size: 0;
+}
+.body__item {
+	width: 150px;
+	height: 80px;
+	background-color: #4e9589;
+	display: inline-block;
+	position: relative;
+	font-size: 0;
+}
+.body__item--top-left {
+	border-radius: 50px 0 0 0;
+}
+.body__front-light {
+	width: 30px;
+	height: 40px;
+	background-color: #cbe9f4;
+	border: 1px solid gray;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	left: -10px;
+	transform: rotate(10deg);
+}
+.body__front-light:hover {
+	background-color: #fff;
+}
+.body__item--top-middle {}
+
+.body__item--top-right {
+	position: relative;
+	border-radius: 0 10px 0 0;
+}
+.body__item--top-right::before,
+.body__item--top-right::after {
+	content: "";
+	width: 50px;
+	height: 5px;
+	background-color: #6B705C;
+	position: absolute;
+	border-radius: 10px;
+}
+.body__item--top-right::before {
+	top: 30px;
+	left: 30%;
+}
+.body__item--top-right::after {
+	bottom: 60px;
+	left: 30%;
+}
+.body__rear-light {
+	width: 30px;
+	height: 40px;
+	background-color: #e23b42;
+	position: absolute;
+	top: 15px;
+	right: 0;
+	border-radius: 3px;
+}
+.body__rear-turnlight {
+	width: 30px;
+	height: 20px;
+	background-color: #f2743a;
+	position: absolute;
+	bottom: 8px;
+	right: 0;
+	border-radius: 3px;
+}
+.extra-wheel {
+	width: 40px;
+	height: 110px;
+	background-color: #231f20;
+	border-radius: 10px;
+	position: absolute;
+	top: -13px;
+	right: -40px;
+}
+.body__item--bottom-left {
+	position: relative;
+	border-radius: 0 0 0 25px;
+}
+.body__front-turnlight {
+	width: 20px;
+	height: 20px;
+	background-color: #f2743a;
+	transform: skew(-10deg);
+	position: absolute;
+	top: -5px;
+	left: 0;
+	border-radius: 3px;
+}
+.bumper {
+	width: 30px;
+	height: 30px;
+	background-color: #2d2b2a;
+	border-radius: 5px;
+}
+.body__front-bumper {
+	position: absolute;
+	top: 25px;
+	left: -10px;
+}
+.wing {
+	width: 125px;
+	height: 75px;
+	border: 5px solid #006400 ;
+	background-color: #172808;
+	position: absolute;
+	border-radius: 40px 40px 0 0 ;
+	border-bottom: none;
+}
+.wing--left {
+	top: 6px;
+	left: 22px;
+}
+.wing--right {
+	top: 6px;
+	right: 22px;
+}
+.wheel {
+	/* display: none; */
+	width: 100px;
+	height: 100px;
+	background-color: #231f20;
+	border-radius: 50%;
+	outline: 5px dashed #4c4c4c;
+	position: relative;
+	z-index: 1;
+	animation-name: rotate;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
+.car__jeep:hover .wheel {
+	animation-play-state: paused;
+}
+@keyframes rotate {
+	0% {
+			transform: rotate(360deg);
+		}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+			transform: rotate(0);
+		}
+}
+.rear-wheel {
+	position: absolute;
+	top: 30%;
+	right: 23%;
+}
+.front-wheel {
+	position: absolute;
+	top: 30%;
+	left: 23%;
+}
+.rim {
+	width: 30px;
+	height: 30px;
+	outline: 5px double #000;
+	border: 7px dotted #000;
+	border-radius: 50%;
+	background-color: #4c4c4c;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	transform: translate(-50%, -50%);
+}
+
+.body__item--bottom-middle {}
+
+.body__item--bottom-right {
+	border-radius: 0 0 25px 0;
+}
+.body__rear-bumper {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	bottom: 18px;
+	right: -23px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+/* background */
+.background {
+	position: relative;
+}
+.sky {
+	width: 100%;
+	height: 680px;
+	background-color: #87ceeb;
+	position: relative;
+}
+.sun {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: yellow;
+	box-shadow: 1px 1px 10px yellow;
+}
+/* cloud */
+.cloud {
+	max-width: 300px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+}
+.cloud__circle {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.cloud__circle::before,
+.cloud__circle::after {
+	content: "";
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+}
+.cloud__circle::before {
+	transform: translate(-74px, 20px);
+}
+.cloud__circle::after {
+	transform: translate(93px, 20px);
+}
+.cloud--left {
+	top: 20%;
+	left: 0%;
+	animation-name: cloud-left;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+@keyframes cloud-left {
+	0% {
+		left: 0%;
+	}
+	/* 50% {
+		left: 100px;
+	} */
+	100% {
+		left: 100%;
+	}
+}
+.cloud--centered {
+	top: 18%;
+	left: 40%;
+	animation-name: cloud-centered;
+	animation-duration: 20s;
+	/* animation-direction: alternate; */
+	animation-iteration-count: infinite;
+	animation-delay: 4s;
+}
+@keyframes cloud-centered {
+	0% {
+		left: 0%;
+	}
+	100%	{
+		left: 100%;
+	}
+}
+.cloud--rigth {
+	top: 15%;
+	left: 75%;
+	animation-name: cloud-rigth;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;   
+	animation-delay: 7s;
+}
+@keyframes cloud-rigth {
+	0% {
+		left: 0%;
+	}
+	100% {
+		left:100%;
+	}
+}
+/* grass */
+.grass {
+	width: 100%;
+	height: 200px;
+	background-color: #228B22;
+	position: relative;
+}
+.bush-box {
+	max-width: 300px;
+	height: 100px;
+	overflow: hidden;
+	position: absolute;
+	top: 20px;
+	left: 40%;
+}
+.bush {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: darkgreen;
+}
+
+/* tree */
+.tree {
+	display: inline-block;
+	position: absolute;
+}
+.tree--left {
+	top: 15%;
+	left: 20%;
+}
+.tree--centered {
+	top: -36px;
+	left: 46%;
+}
+.tree--right {
+	top: 14%;
+	right: 20%;
+}
+.tree__trunk {
+	width: 30px;
+	height: 200px;
+	background-color: #8B4513;
+	position: absolute;
+	top: -100px;
+	left: 0;
+}
+.tree__trunk::before,
+.tree__trunk::after {
+	content: "";
+	width: 15px;
+	height: 70px;
+	background-color: #8B4513;
+	position: absolute;
+}
+.tree__trunk::before {
+	top: 0;
+	left: 0;
+	transform: skew(35deg, 0) translate(-23px, 0);
+}
+.tree__trunk::after {
+	top: 45px;
+	right: 0;
+	transform: skew(-35deg, 0) translate(23px, 0);
+}
+.tree__leaf {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #228B22;
+	position: absolute;
+}
+.tree__leaf--left {
+	top: -165px;
+	left: -117px;
+}
+.tree__leaf--center {
+	top: -195px;
+	left: -35px;
+}
+.tree__leaf--right {
+	top: -154px;
+	left: 23px;
+}
+.road {
+	width: 100%;
+	height: 400px;
+	background-color: gray;
+	position: relative;
+}
+.line {
+	width: 100%;
+	height: 20px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%);
+}
+.apple {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	animation-name: apple;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+@keyframes apple {
+	0% {
+		background-color: #228B22;
+	}
+	50% {
+		background-color: red;
+	}
+	100% {
+		background-color: #8B4513;
+	}
+}
+.apple--01 {
+	top: 20px;
+	left: 30px;
+}
+.apple--02 {
+	top: 68px;
+	left: 39px;
+}
+/* ============footer========== */
+.footer {
+	padding-top: 50px;
+}
+.footer__container {
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+.footer__body {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
