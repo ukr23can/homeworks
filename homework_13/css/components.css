@@ -1,0 +1,30 @@
+.link-info {
+	font-size: 15px;
+	line-height: 126.666667%;
+	/* 19/15 */
+	color: #FE3F3F;
+	display: flex;
+	align-self: flex-start;
+}
+.link-info span {
+	position: relative;
+	display: inline-block;
+	line-height: 1.5;
+}
+.link-info span::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #FE3F3F;
+	transition: width 0.5s;
+}
+.link-info:hover span::after {
+	width: 100%;
+}
+
+
+
+
