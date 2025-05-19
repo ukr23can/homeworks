@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homework No14</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Google fonts -->
+</head>
+
+<body>
+	<div class="wrapper" id="up">
+		<!-- section-header -->
+		<header class="header"></header>
+
+		<!-- main -->
+		<main class="page">
+			<div class="page__container">
+				<h1>Homework No14</h1>
+
+				<div class="ecobazar">
+					<div class="ecobazar__container">
+						<div class="ecobazar__body">
+							<div class="ecobazar__form">
+								<form action="#" method="post" class="form">
+									<!-- form-info -->
+									<div class="form__info info">
+										<h2 class="title">Billing Information</h2>
+										<div class="info__inner">
+											<!-- form-info__personal -->
+											<div class="info__personal margin-bottom">
+												<div class="info__first-name form-group">
+													<label for="first-name">First name</label>
+													<input type="text" id="first-name" placeholder="Your first name">
+												</div>
+												<div class="info__last-name form-group">
+													<label for="last-name">Last name</label>
+													<input type="text" id="last-name" placeholder="Your last name">
+												</div>
+												<div class="info__company-name form-group">
+													<label for="company-name">Company Name (optional)</label>
+													<input type="text" id="company-name" placeholder="Company name">
+												</div>
+											</div>
+											<!-- form-info__address -->
+											<div class="info__address margin-bottom">
+												<div class="form-group">
+													<label for="address">Street Address</label>
+													<input type="text" id="address" placeholder="Street Address">
+												</div>
+											</div>
+											<!-- form-info__region -->
+											<div class="info__region margin-bottom">
+												<div class="info__country form-group">
+													<label for="country">Country / Region</label>
+													<select name="country" id="country" required>
+														<option value="" disabled selected>Select</option>
+														<option value="uk">Ukraine</option>
+														<option value="can">Canada</option>
+														<option value="us">US</option>
+														<option value="mex">Mexico</option>
+													</select>
+												</div>
+												<div class="info__states form-group">
+													<label for="state">States</label>
+													<select name="state" id="state" required>
+														<option value="" disabled selected>Select</option>
+														<option value="kyiv">Kyiv</option>
+														<option value="kyiv">Lviv</option>
+														<option value="kyiv">Odesa</option>
+														<option value="kyiv">Nova Scotia</option>
+														<option value="kyiv">Manitoba</option>
+														<option value="kyiv">New Brunswik</option>
+														<option value="kyiv">Arizona</option>
+														<option value="kyiv">Texas</option>
+													</select>
+												</div>
+												<div class="info__zip form-group">
+													<label for="zip">Zip Code</label>
+													<input type="text" id="zip" maxlength="6" placeholder="Zip Code">
+												</div>
+											</div>
+											<!-- form-info__connection -->
+											<div class="info__connection">
+												<div class="info__email form-group">
+													<label for="email">Email</label>
+													<input type="email" id="email" placeholder="Email Address">
+												</div>
+												<div class="info__phone form-group">
+													<label for="phone">Phone</label>
+													<input type="tel" id="phone" placeholder="Phone number">
+												</div>
+											</div>
+											<!-- extra-option -->
+											<div class="checkbox">
+												<label for="checkbox">
+													<input type="checkbox" name="form[]" id="checkbox" class="checkbox__input">
+													<span class="checkbox__label">Ship to a different address</span>
+												</label>
+											</div>
+											<!-- form__additional -->
+											<div class="form__additional additional">
+												<h2 class="title">Additional Info</h2>
+												<div class="additional__info form-group">
+													<label for="notes">Order Notes (Optional)</label>
+													<textarea class="placeholder" id="notes"
+														placeholder="Notes about your order, e.g. special notes for delivery">
+													</textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- form-order -->
+									<div class="form__order order">
+										<div class="order__body">
+											<div class="order__inner">
+												<!-- order__products -->
+												<div class="order__products product">
+													<h3 class="order__title">Order Summery</h3>
+													<div class="product__order">
+														<div class="product__inner">
+															<a href="#" class="product__link">
+																<div class="product__image">
+																	<img src="img/green.jpg" alt="">
+																</div>
+																<h4 class="product__title">Green Capsicum</h4>
+															</a>
+															<div class="product__quantity">x5</div>
+														</div>
+														<div class="product__amount">$70.00</div>
+													</div>
+													<div class="product__order">
+														<div class="product__inner">
+															<a href="" class="product__link">
+																<div class="product__image">
+																	<img src="img/red.jpg" alt="">
+																</div>
+																<h4 class="product__title">Red Capsicum</h4>
+															</a>
+															<div class="product__quantity">x1</div>
+														</div>
+														<div class="product__amount">$14.00</div>
+													</div>
+												</div>
+												<!-- order__summary -->
+												<div class="order__summary summary">
+													<div class="summary__subtotal">
+														<h4 class="summary__subtitle">Subtotal:</h4>
+														<span class="summary__amount">$84.00</span>
+													</div>
+													<div class="summary__shipping">
+														<h4 class="summary__subtitle">Shipping:</h4>
+														<span class="summary__amount">Free</span>
+													</div>
+													<div class="summary__total">
+														<h4 class="summary__subtitle">Total:</h4>
+														<span class="summary__amount">$84.00</span>
+													</div>
+												</div>
+												<!-- order__payment -->
+												<div class="order__payment payment-method">
+													<h3 class="order__title order__title--margin">Payment Method</h3>
+													<div class="payment-method__inner">
+														<div class="payment-method__box">
+															<label for="cash" class="payment-method__label">
+																<input type="radio" name="form[]" id="cash"
+																	class="payment-method__input">
+																<span class="payment-method__checkbox">Cash on Delivery</span>
+															</label>
+														</div>
+														<div class="payment-method__box">
+															<label for="paypal" class="payment-method__label">
+																<input type="radio" name="form[]" id="paypal"
+																	class="payment-method__input">
+																<span class="payment-method__checkbox">Paypal</span>
+															</label>
+														</div>
+														<div class="payment-method__box">
+															<label for="amazon-pay" class="payment-method__label">
+																<input type="radio" name="form[]" id="amazon-pay"
+																	class="payment-method__input">
+																<span class="payment-method__checkbox">Amazon Pay</span>
+															</label>
+														</div>
+													</div>
+												</div>
+												<!-- order-button -->
+												<button class="order-button">Place Order</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>
