@@ -190,6 +190,14 @@ select:focus {
 	outline: 3px solid #fff;
 	outline-offset: -4px;
 }
+.checkbox__box:focus-visible .checkbox__label {
+	outline: 2px solid #00B207;
+	outline-offset: 3px;
+	border-radius: 6px;
+}
+.checkbox__box {
+	outline: none;
+}
 .form__additional {
 	margin-top: 16px;
 }
@@ -255,7 +263,6 @@ select:focus {
 	font-weight: 500;
 }
 .summary__shipping {
-	/* position: relative; */
 	border-top: 1px solid #E6E6E6;
 	border-bottom: 1px solid #E6E6E6;
 	padding: 12px 0;
@@ -281,7 +288,6 @@ select:focus {
 .summary__total {
 	margin-top: 12px;
 }
-
 .summary__total .summary__subtitle {
 	font-size: 16px;
 }
@@ -304,16 +310,13 @@ select:focus {
 .payment-method__box {}
 
 .payment-method__input {
-	/* position: absolute; */
 	opacity: 0;
 	width: 0;
 	height: 0;
 	/* width: auto; */
-	/* transition: border-color 0.9s ; */
 }
 .payment-method__label {
 	display: flex;
-	/* transition: border-color 0.9s; */
 }
 .payment-method__checkbox {
 	display: inline-flex;
@@ -340,9 +343,9 @@ select:focus {
 	transition: border-color 0.9s;
 }	
 .payment-method__input:focus-visible + .payment-method__checkbox {
-	/* outline: 2px solid blue; */
-	outline: 1px solid #fff;
+	outline: 2px solid #00B207;
 	outline-offset: 3px;
+	border-radius: 6px;
 }
 
 
