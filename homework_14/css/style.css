@@ -60,7 +60,7 @@ h1 {
 .ecobazar__form {}
 
 
-/*  */
+
 /* ==========form========= */
 .form {
 	display: flex;
@@ -164,9 +164,11 @@ select:focus {
 	bottom: -32px;
 	left: 0;
 }
-
-.checkbox__label {
+.checkbox__box {
 	display: flex;
+}
+.checkbox__label {
+	display: inline-flex;
 	align-items: center;
 	gap: 6px;
 }
@@ -179,7 +181,6 @@ select:focus {
 	flex-shrink: 0;
 }
 .checkbox__input {
-	visibility: hidden;
 	opacity: 0;
 	width: 0;
 	height: 0;
@@ -192,10 +193,7 @@ select:focus {
 .form__additional {
 	margin-top: 16px;
 }
-
 .additional {}
-
-
 
 .margin-bottom {
 	margin-bottom: 16px;
@@ -296,31 +294,29 @@ select:focus {
 /* order__payment */
 .order__payment {}
 
-.payment-method {
-	display: flex;
-	flex-direction: column;
-} 
+.payment-method {} 
+
 .payment-method__inner {
-	display: inline-flex;
+	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
-.payment-method__box {
-	/* transition: border 0.5s; */
-}
-.payment-method__box input {
+.payment-method__box {}
+
+.payment-method__input {
+	/* position: absolute; */
 	opacity: 0;
-	visibility: hidden;
 	width: 0;
 	height: 0;
-	width: auto;
+	/* width: auto; */
+	/* transition: border-color 0.9s ; */
 }
 .payment-method__label {
-	/* display: flex; */
-}
-
-.payment-method__checkbox {
 	display: flex;
+	/* transition: border-color 0.9s; */
+}
+.payment-method__checkbox {
+	display: inline-flex;
 	align-items: center;
 	gap: 6px;
 }
@@ -331,15 +327,22 @@ select:focus {
 	border-radius: 50%;
 	border: 1px solid #CCCCCC;
 	flex-shrink: 0;
+	align-self: flex-start;
 }
 .payment-method__input:checked + .payment-method__checkbox::before {
 	background-color: #00B207;
 	outline: 3px solid #fff;
 	outline-offset: -4px;
 }
+.payment-method__input:hover + .payment-method__checkbox::before {
+	border-color: #00B207;
+	display: inline-flex;
+	transition: border-color 0.9s;
+}	
 .payment-method__input:focus-visible + .payment-method__checkbox {
-	/* outline: 3px solid #fff;
-	outline-offset: 3px; */
+	/* outline: 2px solid blue; */
+	outline: 1px solid #fff;
+	outline-offset: 3px;
 }
 
 

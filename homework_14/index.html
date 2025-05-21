@@ -23,7 +23,7 @@
 					<div class="ecobazar__container">
 						<div class="ecobazar__body">
 							<div class="ecobazar__form">
-								<form action="#" method="post" class="form">
+								<form action="#" method="post" class="form" id="order-button">
 									<!-- form-info -->
 									<div class="form__info info">
 										<h2 class="title">Billing Information</h2>
@@ -94,7 +94,7 @@
 											</div>
 											<!-- extra-option -->
 											<div class="checkbox">
-												<label for="checkbox">
+												<label tabindex="0" class="checkbox__box" for="checkbox">
 													<input type="checkbox" name="form[]" id="checkbox" class="checkbox__input">
 													<span class="checkbox__label">Ship to a different address</span>
 												</label>
@@ -104,9 +104,8 @@
 												<h2 class="title">Additional Info</h2>
 												<div class="additional__info form-group">
 													<label for="notes">Order Notes (Optional)</label>
-													<textarea class="placeholder" id="notes"
-														placeholder="Notes about your order, e.g. special notes for delivery">
-													</textarea>
+													<textarea id="notes"
+														placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
 												</div>
 											</div>
 										</div>
@@ -121,7 +120,7 @@
 													<h3 class="order__title">Order Summery</h3>
 													<div class="product__order">
 														<div class="product__inner">
-															<a href="#" class="product__link">
+															<a href="#" target="_blank" class="product__link">
 																<div class="product__image">
 																	<img src="img/green.jpg" alt="">
 																</div>
@@ -133,7 +132,7 @@
 													</div>
 													<div class="product__order">
 														<div class="product__inner">
-															<a href="" class="product__link">
+															<a href="#" target="_blank" class="product__link">
 																<div class="product__image">
 																	<img src="img/red.jpg" alt="">
 																</div>
@@ -187,7 +186,8 @@
 													</div>
 												</div>
 												<!-- order-button -->
-												<button class="order-button">Place Order</button>
+												<button type="submit" form="order-button" class="order-button"
+													id="order-button">Place Order</button>
 											</div>
 										</div>
 									</div>

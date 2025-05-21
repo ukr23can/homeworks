@@ -12,6 +12,12 @@
 	align-items: center;
 	gap: 6px;
 }
+.product__link .product__title:hover {
+	text-decoration: underline;
+}
+.product__link .product__image:hover {
+	transform: scale(1.1);
+}
 .product__image {
 	max-width: 60px;
 }
@@ -50,7 +56,10 @@
 	background-color: transparent;
 	color: #00B207;
 }
-
+.order-button:focus-visible {
+	outline: 2px solid gray;
+	box-shadow: 2px 3px 2px gray;
+}
 
 
 
