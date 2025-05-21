@@ -8,9 +8,7 @@
 	max-width: 376px;
 }
 .product__link {
-	display: flex;
-	align-items: center;
-	gap: 6px;
+	transition:  0.5s;
 }
 .product__link .product__title:hover {
 	text-decoration: underline;
@@ -21,7 +19,8 @@
 .product__image {
 	max-width: 60px;
 }
-.product__title {}
+.product__title {
+}
 
 .product__inner {
 	display: flex;
