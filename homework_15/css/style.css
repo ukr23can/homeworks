@@ -230,18 +230,18 @@ body {
 
 
 /* ============= media ============ */
-/* @media (any-hover:hover) {
+@media (any-hover:hover) {
 	.card__item:hover .card__links {
 			opacity: 1;
 			visibility: visible;
 		}
 }
 @media (any-hover:none) {
-	.card__item:hover .card__links {
+	.card__item .card__links {
 		opacity: 1;
 		visibility: visible;
 	}
-} */
+}
 
 
 @media (max-width:1350px) {
