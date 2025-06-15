@@ -663,7 +663,11 @@ body {
 }
 
 /* ========= media ======== */
-@media (any-hover: hover),(pointer: fine) {
+@media (any-hover:hover),(pointer:fine) {
+	.deal__card:hover .buttons {
+			opacity: 1;
+			visibility: visible;
+		}
 	.floral-card__image img:hover {
 			transform: scale(1.02);
 	}
