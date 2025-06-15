@@ -1,0 +1,264 @@
+/* price */
+.price {}
+
+.price__current {
+	font-size: 16px;
+	font-weight: 500;
+}
+.price__oldest {
+	font-size: 16px;
+	color: #999;
+	text-decoration: line-through;
+}
+.card__rating {}
+
+
+/* property */
+.property {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	max-width: calc(100% - 90px);
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+	pointer-events: none;
+}
+.property__sale {
+	color: #fff;
+	background-color: #EA4B48;
+	border-radius: 4px;
+	padding: 3px 8px;
+}
+.property__sale span {
+	color: #fff;
+	font-weight: 500;
+}
+
+/* rating */
+.rating {}
+
+.rating__star {}
+
+.rating__star--active {
+	fill: #FF8A00;
+}
+.rating__star--inactive {
+	fill: #CCC;
+}
+
+
+/* link-info*/
+.link-info {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	align-self: center;
+}
+.link-info span {
+	position: relative;
+	font-size: 16px;
+	font-weight: 500;
+	color: #00B207;
+	min-height: 12px;
+}
+.link-info span:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: #00B207;
+	transition: width 0.5s;
+}
+.link-info:hover span::after {
+	width: 100%;
+}
+
+
+/* button-shop */
+.button-shop {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 0 auto;
+	flex-shrink: 0;
+	color: #00B207;
+	border: 1px solid transparent;
+	font-weight: 600;
+	line-height: 1.2;
+	border-radius: 43px;
+	background-color: #fff;
+	padding-block: 14px;
+	padding-inline: 32px;
+	transition: border 0.3s;
+}
+.button-shop::after {
+	content: "";
+	background: url("../img/icons/arrow.svg") 0 center / 100% no-repeat;
+	width: 15px;
+	height: 15px;
+	flex-shrink: 0;
+}
+.button-shop:hover {
+	border: 1px solid #00B207;
+}
+.button-shop svg {}
+
+
+/* buttons */
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+/* cart-button */
+.cart-button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #F2F2F2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	transition: background-color 0.5s;
+}
+.cart-button svg {
+	width: 20px;
+	height: 20px;
+	fill: transparent;
+	stroke: #1A1A1A;
+	transition: fill 0.3s, stroke 0.3s;
+}
+.cart-button:hover{
+	background-color: #2C742F;
+}
+.cart-button:hover > svg {
+	stroke: #fff;
+}
+.cart-button--basket {
+
+}
+
+/* card__links */
+.card__links {
+	display: inline-flex;
+	flex-direction: column;
+	gap: 6px;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s;
+}
+.link {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border: 1px solid #F2F2F2;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	transition: all 0.5s;
+}
+.link:hover {
+	background-color: #00B207;
+	border: 1px solid #00B207;
+}
+.link:hover > svg {
+	stroke: #fff;
+}
+.link svg {
+	width: 20px;
+	height: 20px;
+	stroke: #1A1A1A;
+	fill: transparent;
+	transition: stroke 0.5s;
+}
+.link-wishlist {
+	/* display: none; */
+	/* opacity: 0; */
+	/* visibility: hidden; */
+}
+.link-preview {
+	/* display: none; */
+	/* opacity: 0; */
+	/* visibility: hidden; */
+}
+.cart-button--basket {
+	/* display: none; */
+	/* opacity: 0; */
+	/* visibility: hidden; */
+}
+
+
+/* actions-links */
+.action {
+	display: flex;
+	gap: 16px;
+}
+.action__item-link:hover {
+	text-decoration: underline;
+}
+.link-mark,
+.link-admin,
+.link-comments {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+}
+.link-mark::before,
+.link-admin::before,
+.link-comments:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	/* align-self: flex-start; */
+}
+.link-mark::before {
+	background: url("../img/icons/mark.svg") 0 0 / 100% no-repeat;
+}
+.link-admin::before {
+	background: url("../img/icons/user.svg") 0 0 / 100% no-repeat;
+}
+.link-comments:before {
+	background: url("../img/icons/comments.svg") 0 0 / 100% no-repeat;
+}
+
+
+/* date-blog */
+.date-blog {
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 6px 19px 10px 19px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	aspect-ratio: 1 / 1;
+}
+.date-blog__number {
+	font-size: 20px;
+	font-weight: 500;
+}
+.date-blog__month {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0.36px;
+	color: #808080;
+	text-transform: uppercase;
+}
