@@ -222,7 +222,7 @@ body {
 
 /* ======= products-featured =========*/
 .products__featured {
-	/* display: none; */
+	display: none;
 	margin-bottom: 24px;
 }
 .products__cards {
@@ -377,6 +377,7 @@ body {
 	grid-auto-rows: 1fr;
 	column-gap:  24px;
 	row-gap: 16px;
+	/* display: none; */
 }
 .deals {}
 
@@ -410,46 +411,16 @@ body {
 	border: 1px solid #E6E6E6;
 	transition: all 0.5s;
 }
-.deal__card:hover {
-	border-color: #2C742F;
-	box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
-	z-index: 2;
-}
-.deal__card:hover .cart-button {
-	background-color: #00B207;
-}
-.deal__card:hover .cart-button>svg {
-	stroke: #fff;
-}
-.deal__card:hover .cart-button:hover {
-	background-color: #2C742F;
-	border: 1px solid transparent;
-}
-.deal__card:hover .deal__subtitle {
-	color: #2C742F;
-}
-.deal__card .buttons {
-	transition: opacity 0.5s, visibility 0.9s;
-}
-.deal__card:hover .buttons {
-	opacity: 1;
-	visibility: visible;
-}
+
 .deal__card .deal__price,
 .deal__card .rating {
 	transition: 0.2s;
 }
-.deal__card:hover .deal__price,
-.deal__card:hover .rating {
-	opacity: 0;
-	visibility: hidden;
-}
+
 .deal__card .deal__title {
 	transition: 0.3s;
 }
-.deal__card:hover .deal__title {
-	color: #2C742F;
-}
+
 .deal__image {
 	width: 102px;
 	height: 102px;
@@ -464,9 +435,7 @@ body {
 	transition:  0.5s;
 	will-change: scale;
 }
-.deal__image img:hover {
-	transform: scale(1.03);
-}
+
 .deal__content {
 	display: flex;
 	flex-direction: column;
@@ -492,6 +461,7 @@ body {
 /* ============ blossomia ============*/
 .blossomia {
 	background-color: #F8F3EC;
+	display: none;
 }
 .blossomia__container {
 	max-width: 1230px;
@@ -662,83 +632,50 @@ body {
 	width: 100%;
 }
 
-/* ========= media ======== */
-@media (any-hover:hover),(pointer:fine) {
+/* ============= media - hover ========== */
+@media (any-hover: hover), (pointer:fine) {
 	.deal__card:hover .buttons {
-			opacity: 1;
-			visibility: visible;
-		}
-	.floral-card__image img:hover {
-			transform: scale(1.02);
+		opacity: 1;
+		visibility: visible;
 	}
-	.floral-card__title:hover {
-			color: #DBCCBA;
-			cursor: pointer;
-		}
-	.deal__image img:hover {
-			transform: scale(1.03);	
-		}
-	.deal__card:hover .deal__title {
-			color: #2C742F;	
-		}
-	.deal__card:hover .rating {
-			opacity: 0;
-			visibility: hidden;	
-		}
-	.deal__card:hover .buttons {
-			opacity: 1;
-			visibility: visible;	
-		}
 	.deal__card:hover {
-			border-color: #2C742F;
-			box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
-			z-index: 2;
-		}
+		border-color: #2C742F;
+		box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+		z-index: 2;
+	}
 	.deal__card:hover .cart-button {
-			background-color: #00B207;
-		}
+		background-color: #00B207;
+	}
 	.deal__card:hover .cart-button>svg {
-			stroke: #fff;
-		}
+		stroke: #fff;
+	}
 	.deal__card:hover .cart-button:hover {
-			background-color: #2C742F;
-			border: 1px solid transparent;
-		}
+		background-color: #2C742F;
+		border: 1px solid transparent;
+	}
 	.deal__card:hover .deal__subtitle {
-			color: #2C742F;	
-		}
-	.card__title a:hover {
-			color: #2C742F;	
-		}
-	.card__item:hover.card__item--border:hover {
-			border-color: none;
-			box-shadow: none;
-		}
-	.card__item:hover {
-			border-color: #2C742F;
-			box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
-			z-index: 2;
-		}
-	.card__item:hover .cart-button {
-			background-color: #00B207;
-		}
-	.card__item:hover .cart-button:hover {
-			background-color: #2C742F;
-		}
-	.card__item:hover .cart-button>svg {
-			stroke: #fff;
-		}
-	.card__item:hover .card__links {
-			opacity: 1;
-			visibility: visible;	
-		}
-}
-@media (any-hover:none) {
+		color: #2C742F;
+	}
 	.deal__card .buttons {
-			opacity: 1;
-			visibility: visible;
-		}
+		transition: opacity 0.5s, visibility 0.9s;
+	}
+	.deal__card:hover .deal__price,
+	.deal__card:hover .rating {
+		opacity: 0;
+		visibility: hidden;
+	}
+	.deal__image img:hover {
+		transform: scale(1.03);
+	}
+	.deal__card:hover .deal__title {
+		color: #2C742F;
+	}
 }
+
+
+
+
+/* ========= media ======== */
 @media (max-width: 1350px) {}
 
 @media (max-width: 1168px) {
@@ -848,5 +785,11 @@ body {
 	}
 }
  
+
+
+
+
+
+
 
 
