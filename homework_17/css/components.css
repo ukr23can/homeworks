@@ -139,12 +139,7 @@
 	stroke: #1A1A1A;
 	transition: fill 0.3s, stroke 0.3s;
 }
-.cart-button:hover{
-	background-color: #2C742F;
-}
-.cart-button:hover > svg {
-	stroke: #fff;
-}
+
 .cart-button--basket {
 
 }
@@ -172,13 +167,6 @@
 	justify-content: center;
 	flex-shrink: 0;
 	transition: all 0.5s;
-}
-.link:hover {
-	background-color: #00B207;
-	border: 1px solid #00B207;
-}
-.link:hover > svg {
-	stroke: #fff;
 }
 .link svg {
 	width: 20px;

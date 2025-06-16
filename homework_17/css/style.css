@@ -679,6 +679,18 @@ body {
 	.deal__card:hover .deal__title {
 		color: #2C742F;
 	}
+	.link:hover {
+		background-color: #00B207;
+		border: 1px solid #00B207;
+	}
+	.link:hover>svg {
+		stroke: #fff;
+	}
+	.cart-button:hover {
+		background-color: #2C742F;
+	}
+	.cart-button:hover>svg {
+		stroke: #fff;}
 }
 
 @media (any-hover: none),(pointer: coarse) {
