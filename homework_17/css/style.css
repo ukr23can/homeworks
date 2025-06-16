@@ -222,7 +222,6 @@ body {
 
 /* ======= products-featured =========*/
 .products__featured {
-	display: none;
 	margin-bottom: 24px;
 }
 .products__cards {
@@ -305,28 +304,6 @@ body {
 	border: none;
 	overflow: hidden;
 }
-.card__item:hover.card__item--border:hover {
-	border-color: none;
-	box-shadow: none;
-}
-.card__item:hover {
-	border-color: #2C742F;
-	box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
-	z-index: 2;
-}
-.card__item:hover .cart-button {
-	background-color: #00B207;
-}
-.card__item:hover .cart-button:hover {
-	background-color: #2C742F;
-}
-.card__item:hover .cart-button>svg {
-	stroke: #fff;
-}
-.card__item:hover .card__links {
-	opacity: 1;
-	visibility: visible;
-}
 .card__body {
 	display: flex;
 	flex-direction: column;
@@ -364,9 +341,7 @@ body {
 .card__title a {
 	transition: color 0.9s;
 }
-.card__title a:hover {
-	color: #2C742F;
-}
+
 .card__price {}
 
 
@@ -377,7 +352,6 @@ body {
 	grid-auto-rows: 1fr;
 	column-gap:  24px;
 	row-gap: 16px;
-	/* display: none; */
 }
 .deals {}
 
@@ -468,7 +442,6 @@ body {
 /* ============ blossomia ============*/
 .blossomia {
 	background-color: #F8F3EC;
-	display: none;
 }
 .blossomia__container {
 	max-width: 1230px;
@@ -518,10 +491,6 @@ body {
 	gap: 14px;
 	height: 100%;
 }
-.floral-card__body > .floral-card__content {
-	/* flex-grow: 1;
-	height: 100%; */
-}
 .floral-card__body--top {
 	/* margin-block-start: -50px; */
 }
@@ -544,9 +513,6 @@ body {
 	/* backface-visibility: hidden; */
 	/* transform-style: preserve-3d; */
 }
-.floral-card__image img:hover {
-	transform: scale(1.02);
-}
 .floral-card__content {
 	display: flex;
 	align-items: center;
@@ -561,10 +527,7 @@ body {
 	color: #2C2C2C;
 	transition: color 0.3s;
 }
-.floral-card__title:hover {
-	color: #DBCCBA;
-	cursor: pointer;
-}
+
 .floral-card__link {}
 
 .link-floral {
@@ -592,10 +555,6 @@ body {
 	flex-shrink: 0;
 	transition: 0.5s;
 	will-change: transform;
-}
-.link-floral__wishlist:hover,
-.link-floral__shopping:hover {
-	transform: scale(1.1);
 }
 .floral-card__price {}
 
@@ -635,15 +594,41 @@ body {
 	background-color: #2C2C2C;
 	transition: width 0.5s;
 }
-.floral-button:hover span::after {
-	width: 100%;
-}
+
 
 /* ============= media - hover ========== */
 @media (any-hover: hover), (pointer:fine) {
+	/*  card-item  */
+	.card__item:hover.card__item--border:hover {
+		box-shadow: none;
+	}
+	.card__item:hover {
+		border-color: #2C742F;
+		box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+		z-index: 2;
+	}
+	.card__item:hover .cart-button {
+		background-color: #00B207;
+	}
+	.card__item:hover .cart-button:hover {
+		background-color: #2C742F;
+	}
+	.card__item:hover .cart-button>svg {
+		stroke: #fff;
+	}
+	.card__item:hover .card__links {
+		opacity: 1;
+		visibility: visible;
+	}
+	.card__title a:hover {
+		color: #2C742F;
+	}
+
+	/* deal__card */
 	.deal__card:hover .buttons {
 		opacity: 1;
 		visibility: visible;
+		right: 0;
 	}
 	.deal__card:hover {
 		border-color: #2C742F;
@@ -695,15 +680,23 @@ body {
 	}
 	.link-info:hover span::after {
 		width: 100%;}
-}
 
-@media (any-hover: none),(pointer: coarse) {
-	.buttons {
-		opacity: 1;
-		visibility: visible;
+		/* blossomia */
+	.floral-card__image img:hover {
+		transform: scale(1.02);	
+	}
+	.floral-card__title:hover {
+		color: #DBCCBA;
+		cursor: pointer;			
+	}
+	.link-floral__wishlist:hover,
+	.link-floral__shopping:hover {
+		transform: scale(1.1);
+	}
+	.floral-button:hover span::after {
+		width: 100%;
 	}
 }
-
 
 
 /* ========= media ======== */

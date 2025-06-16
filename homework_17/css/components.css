@@ -105,15 +105,19 @@
 
 /* buttons */
 .buttons {
+	overflow: auto;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 12px;
-	/* position: absolute;
-	bottom: 23px;
-	left: 0; */
+	/* width: 100%; */
+	/* position: absolute; */
+	/* right: -100%; */
+	/* bottom: 23px; */
 	opacity: 0;
 	visibility: hidden;
 }
+
+
 
 
 /* cart-button */
