@@ -72,9 +72,7 @@
 	background-color: #00B207;
 	transition: width 0.5s;
 }
-.link-info:hover span::after {
-	width: 100%;
-}
+
 
 
 /* button-shop */
@@ -101,9 +99,7 @@
 	height: 15px;
 	flex-shrink: 0;
 }
-.button-shop:hover {
-	border: 1px solid #00B207;
-}
+
 .button-shop svg {}
 
 

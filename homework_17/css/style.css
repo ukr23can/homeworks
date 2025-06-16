@@ -394,8 +394,6 @@ body {
 	flex-direction: column;
 	flex-grow: 1;
 }
-
-
 .banner-box {
 	position: relative;
 }
@@ -690,7 +688,13 @@ body {
 		background-color: #2C742F;
 	}
 	.cart-button:hover>svg {
-		stroke: #fff;}
+		stroke: #fff;
+	}
+	.button-shop:hover {
+		border: 1px solid #00B207;
+	}
+	.link-info:hover span::after {
+		width: 100%;}
 }
 
 @media (any-hover: none),(pointer: coarse) {
