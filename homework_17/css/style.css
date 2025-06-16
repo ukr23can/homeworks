@@ -623,12 +623,13 @@ body {
 	.card__title a:hover {
 		color: #2C742F;
 	}
-
+	.action__item-link:hover {
+		text-decoration: underline;
+	}
 	/* deal__card */
 	.deal__card:hover .buttons {
 		opacity: 1;
 		visibility: visible;
-		right: 0;
 	}
 	.deal__card:hover {
 		border-color: #2C742F;
@@ -698,6 +699,16 @@ body {
 	}
 }
 
+@media (any-hover: none),(pointer: coarse) {
+	.deal__card .buttons {
+		opacity: 1;
+		visibility: visible;
+	}
+	.card__links {
+		opacity: 1;
+		visibility: visible;
+	}
+}
 
 /* ========= media ======== */
 @media (max-width: 1350px) {}

@@ -105,7 +105,6 @@
 
 /* buttons */
 .buttons {
-	overflow: auto;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 12px;
@@ -196,9 +195,6 @@
 .action {
 	display: flex;
 	gap: 16px;
-}
-.action__item-link:hover {
-	text-decoration: underline;
 }
 .link-mark,
 .link-admin,
