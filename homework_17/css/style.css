@@ -388,7 +388,13 @@ body {
 }
 .deal {}
 
-.deal__title {}
+.deal__info {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
 
 .banner-box {
 	position: relative;
@@ -411,21 +417,23 @@ body {
 	border: 1px solid #E6E6E6;
 	transition: all 0.5s;
 }
-
 .deal__card .deal__price,
 .deal__card .rating {
 	transition: 0.2s;
 }
+.deal__card  {
 
+}
 .deal__card .deal__title {
 	transition: 0.3s;
 }
-
 .deal__image {
-	width: 102px;
-	height: 102px;
 	overflow: hidden;
-	background-color: #d3d3d3;
+	padding: 5px;
+	flex: 0 1 112px;
+	aspect-ratio: initial;
+	display: flex;
+	align-items: center;
 }
 .deal__image img {
 	width: 100%;
@@ -435,14 +443,15 @@ body {
 	transition:  0.5s;
 	will-change: scale;
 }
-
 .deal__content {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
 	flex-grow: 1;
+	height: 100%;
 	position: relative;
+	padding-block: 24px;
 }
 .deal__title {
 	font-size: 18px;
