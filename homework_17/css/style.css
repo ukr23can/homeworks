@@ -672,6 +672,12 @@ body {
 	}
 }
 
+@media (any-hover: none),(pointer: coarse) {
+	.buttons {
+		opacity: 1;
+		visibility: visible;
+	}
+}
 
 
 
