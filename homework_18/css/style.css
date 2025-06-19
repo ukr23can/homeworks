@@ -1,0 +1,78 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* reset */
+@import url("reset.css");
+
+/* components */
+@import url("components.css");
+
+/* Основні стилі */
+body {
+	font-family: "Poppins" ,sans-serif;
+	line-height: 1.5; 
+	font-size: 14px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+	min-height: 100%;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	/* max-width: 902px; */
+	/* margin: 0 auto; */
+	/* padding: 0 15px; */
+}
+/* .article__container,
+.comments-section__container {
+	max-width: 902px;
+	padding-inline: 15px;
+} */
+.comments-section__container {}
+
+/* ============= header =========== */
+
+
+
+
+
+/* ============= page =========== */
+.page {
+	display: flex;
+	gap: 48px;
+	justify-content: space-evenly;
+	margin: 0 auto;
+}
+.page__container {
+	max-width: 902px;
+	padding-inline: 15px;
+}
+.aside__container {
+	min-width: 400px;
+}
+
+
+
+/* ============= media =========== */
+/* Якщо курсор є  */
+@media (any-hover: hover),
+(pointer: fine) {
+	/* ... */
+}
+
+/* Якщо курсору немає  */
+@media (any-hover: none),
+(pointer: coarse) {
+	/* ... */
+}
+
+
